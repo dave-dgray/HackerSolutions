@@ -12,9 +12,9 @@ import java.util.List;
 
 public class HackerSolutionsTest {
 
-    ArrayList<List> matrix = new ArrayList<>();
+    private ArrayList<List> matrix = new ArrayList<>();
 
-    HackerSolutions solutions = new HackerSolutions();
+    private HackerSolutions solutions;
 
     @Before
     public void setup(){
@@ -22,13 +22,12 @@ public class HackerSolutionsTest {
         matrix.add(Arrays.asList(11, 2, 4));
         matrix.add(Arrays.asList(4, 5, 6));
         matrix.add(Arrays.asList(10, 8, -12));
+        solutions = new HackerSolutions();
     }
 
     @Test
     public void testDiagonalDifference(){
         assertEquals(15, solutions.diagonalDifference(matrix));
     }
-
-
 
 }
