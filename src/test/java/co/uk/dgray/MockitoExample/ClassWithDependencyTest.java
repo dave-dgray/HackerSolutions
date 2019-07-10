@@ -1,4 +1,4 @@
-package co.uk.dgray;
+package co.uk.dgray.MockitoExample;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -13,16 +13,16 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ClassUnderTestTest {
+public class ClassWithDependencyTest {
 
     @Mock
     DependentClass dependentClass;
 
-    private ClassUnderTest classUnderTest;
+    private ClassWithDependency classWithDependency;
 
     @Before
     public void setup() {
-        classUnderTest = new ClassUnderTest(dependentClass);
+        classWithDependency = new ClassWithDependency(dependentClass);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class ClassUnderTestTest {
 
         when(dependentClass.anyMethod()).thenReturn(5);
 
-        int returnValue = classUnderTest.classUnderTestMethod();
+        int returnValue = classWithDependency.callDependentMethod();
 
         verify(dependentClass, Mockito.times(1)).anyMethod();
 

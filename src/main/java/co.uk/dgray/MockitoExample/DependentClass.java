@@ -1,4 +1,4 @@
-package co.uk.dgray;
+package co.uk.dgray.MockitoExample;
 
 class DependentClass {
 
