@@ -5,7 +5,7 @@ import static java.lang.Math.abs;
 import java.util.ArrayList;
 import java.util.List;
 
-class HackerSolutions {
+class HackerTest1 {
 
     int diagonalDifference(ArrayList<List> matrix){
         int leftDiagonal = 0;

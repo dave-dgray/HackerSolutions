@@ -1,4 +1,4 @@
-package co.uk.dgray.MockitoExample;
+package co.uk.dgray.MockitoTest;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

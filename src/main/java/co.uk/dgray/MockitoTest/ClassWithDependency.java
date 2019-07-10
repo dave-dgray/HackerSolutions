@@ -1,4 +1,4 @@
-package co.uk.dgray.MockitoExample;
+package co.uk.dgray.MockitoTest;
 
 class ClassWithDependency {
 
